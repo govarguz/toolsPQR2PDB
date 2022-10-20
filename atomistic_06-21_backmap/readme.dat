@@ -1,0 +1,15 @@
+Atomistic structures backmapped from SPQR simulations.
+There are three fragments:
+
+01_ctd (from central 3 domain, sequential double-strands connected by internal loops. Resids 169-223, 595-646) 
+
+02_3pd (from 3' domain) (from unstructured 3' domain, a junction of 11 stems which emerge from it. Resids 766 to 1058)
+
+03_uns_3pd is 02_3pd without secondary structure constraints.
+
+The structures were cut from the total genome and attracted with a moderately strong, linear potential towards walls in the x, y and z direction. After this, a Debye-Hueckel potential, with lambda_D=10 Angstom, was applied. The wall has always a purely repulsive interaction of 1/d^12 .
+The structures listed here are:
+$STRUCT.$DIR.$REAL.pdb
+$STRUCT is the system analyzed.
+$DIR is the direction of the vector normal to the plane.
+$REAL is the realization number. Number 0 is the initial, unrelaxed condition. 1, 2 and 3 correspond to the minimum energy structures found after running a relaxation simulation of 800000 Monte Carlo swaps. Therefore, we expect to find higher energies in the *.0.pdb structures, and something similar in the other three, for each system and wall.
